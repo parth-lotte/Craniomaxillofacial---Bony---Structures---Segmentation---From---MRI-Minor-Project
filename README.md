@@ -14,3 +14,11 @@ Craniomaxillofacial Surgery (CMF) is crucial for correcting congenital facial an
 ## Dataset
 
 The experiments were conducted on a dataset collected from Kaggle. The dataset consists of 810 pairs of aligned **CT** and **MRI** scans of approximately 40 patients with Brain Tumor. We implemented the deep learning models using TensorFlow. The network of each model was trained on different hyperparameters. We employed the **Dice similarity** coefficient to assess the accuracy of segmentation and Intersection over union (IoU) and Dice Loss as the loss function. The performance of the models was compared before and after augmentation of the images.
+
+# MRI- Scan 
+![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/mri_0.png)                                                                          ![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/mri_1.png)
+
+# CT-Scan
+![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/ct_0.png)                                                                          ![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/ct_1.png)                                                            
+
+
