@@ -19,6 +19,23 @@ The experiments were conducted on a dataset collected from Kaggle. The dataset c
 ![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/mri_0.png)                                                                          ![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/mri_1.png)
 
 # CT-Scan
-![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/ct_0.png)                                                                          ![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/ct_1.png)                                                            
+![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/ct_0.png)                                                                          ![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/ct_1.png)   
+
+
+# Model
+
+ **FCN**
+
+The FCN model we implemented has an encoder consisting of three blocks of two convolutional layers followed by a max-pooling layer to reduce the spatial dimension of the feature maps as shown in figure 2. Each block starts with a convolutional layer with 64, 128, and 256 filters, respectively, with a 3x3 kernel and ReLU activation function [15]. The bottleneck layer consists of a single convolutional layer with 512 filters of size 3x3 and a ReLU activation function. The decoder consists of three blocks of two convolutional layers followed by an up-sampling layer to increase the spatial resolution of the feature maps. Each block starts with an up-sampling layer followed by a convolutional layer with 256, 128, and 64 filters, respectively, with a 3x3 kernel and ReLU activation function. The final layer is a convolutional layer with a 1x1 kernel and sigmoid activation function.
+
+![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/new_alex-model.jpg)
+
+
+
+**U-NET**
+
+The U-Net architecture is a fully convolutional network that is represented in a 'U' shape, consisting of an encoder on the left and a decoder on the right as shown in figure 3. The input image is passed through a series of convolutional layers with ReLU activation function, resulting in a reduction of image size [16]. The encoder block includes max-pooling layers with increasing numbers of filters, while the decoder block has decreasing numbers of filters for gradual upsampling of the image. Skip connections are used to connect the previous outputs with the decoder layers to preserve notable features and lead to faster convergence. The final convolution block consists of convolutional layers and a filter with the appropriate function to produce the output.
+
+![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/U%20Net.png)
 
 
