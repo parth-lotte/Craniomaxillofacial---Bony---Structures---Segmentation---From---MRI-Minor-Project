@@ -43,5 +43,11 @@ The U-Net architecture is a fully convolutional network that is represented in a
 
 <img src="FCN.png" alt="Flowchart" >
 
+## Authors
+
+- [@parth-lotte](https://www.github.com/parth-lotte)
+- [@SohaHussain](https://www.github.com/SohaHussain)
+
+
 
 
