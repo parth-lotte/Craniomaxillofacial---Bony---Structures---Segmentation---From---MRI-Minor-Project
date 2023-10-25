@@ -39,3 +39,9 @@ The U-Net architecture is a fully convolutional network that is represented in a
 ![alt text](https://github.com/parth-lotte/Craniomaxillofacial---Bony---Structures---Segmentation---From---MRI-Minor-Project/blob/master/U%20Net.png)
 
 
+**Project Flow**
+
+<img src="FCN.png" alt="Flowchart" >
+
+
+
